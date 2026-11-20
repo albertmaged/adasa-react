@@ -1,0 +1,253 @@
+
+.blog-details-page {
+  background: #080808;
+  color: white;
+  min-height: 100vh;
+}
+
+.details-hero {
+  min-height: 610px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.details-hero-inner {
+  min-height: 610px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 55px;
+}
+
+.details-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  align-self: flex-start;
+  background: rgba(25, 28, 31, 0.85);
+  border: 1px solid #343434;
+  border-radius: 40px;
+  padding: 12px 20px;
+}
+
+.details-breadcrumb a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.details-breadcrumb a:hover {
+  color: #ff7900;
+}
+
+.breadcrumb-arrow {
+  color: #777;
+  font-size: 12px;
+}
+
+.breadcrumb-current {
+  color: #ff9000;
+}
+
+.details-hero-text {
+  margin-top: 70px;
+  text-align: right;
+}
+
+.details-meta {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  color: #e0e0e0;
+  font-size: 15px;
+}
+
+.details-meta span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.details-meta .details-category {
+  background: #ff7900;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.details-title {
+  color: white;
+  font-size: clamp(36px, 5vw, 68px);
+  font-weight: 800;
+  line-height: 1.5;
+  max-width: 1100px;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+.details-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(24, 27, 30, 0.9);
+  border: 1px solid #383838;
+  border-radius: 20px;
+  padding: 15px 20px;
+  width: fit-content;
+}
+
+.details-author img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ff7900;
+}
+
+.details-author-info {
+  text-align: right;
+}
+
+.details-author-info h5 {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.details-author-info p {
+  color: #aaa;
+  margin: 0;
+  font-size: 14px;
+}
+
+.details-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 350px;
+  gap: 60px;
+  padding-top: 55px;
+  padding-bottom: 100px;
+  align-items: start;
+}
+
+.details-main {
+  min-width: 0;
+  text-align: right;
+}
+
+.details-intro {
+  background: linear-gradient(120deg, #21140b, #150f0b);
+  border: 1px solid #66350c;
+  border-radius: 20px;
+  padding: 30px 35px;
+  color: #ddd;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 2;
+}
+
+.details-article {
+  margin-top: 45px;
+  scroll-margin-top: 100px;
+}
+
+.details-article h2 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.details-article p {
+  color: #aaa;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.details-sidebar {
+  background: #141414;
+  border: 1px solid #292929;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.details-sidebar-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.details-sidebar-title h4 {
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.details-list-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #66350c;
+  border-radius: 14px;
+  background: #2b1a0e;
+  color: #ff7900;
+}
+
+.details-sidebar-links {
+  margin-top: 25px;
+}
+
+.details-sidebar-links a {
+  color: #aaa;
+  text-decoration: none;
+  line-height: 1.8;
+}
+
+.details-sidebar-links a:hover {
+  color: #ff7900;
+}
+
+@media (max-width: 992px) {
+  .details-body {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .details-hero,
+  .details-hero-inner {
+    min-height: 540px;
+  }
+
+  .details-hero-text {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .details-hero-inner {
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+
+  .details-title {
+    font-size: 34px;
+  }
+
+  .details-meta {
+    gap: 12px;
+    font-size: 13px;
+  }
+
+  .details-author img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .details-intro {
+    padding: 20px;
+    font-size: 16px;
+  }
+}

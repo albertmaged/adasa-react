@@ -1,0 +1,25 @@
+:root {
+  --bs-primary: #ff5900;
+  --bs-primary-rgb: 255, 89, 0;
+}
+
+.btn-primary {
+  --bs-btn-bg: #ff5900;
+  --bs-btn-border-color: #ff5900;
+  --bs-btn-hover-bg: #e65000;
+  --bs-btn-hover-border-color: #e65000;
+  --bs-btn-active-bg: #cc4800;
+  --bs-btn-active-border-color: #cc4800;
+}
+
+.text-primary {
+  color: #ff5900 !important;
+}
+
+.bg-primary {
+  background-color: #ff5900 !important;
+}
+
+.border-primary {
+  border-color: #ff5900 !important;
+}
